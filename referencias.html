@@ -1,1 +1,606 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Referências HTML - Meu Portfólio</title>
+</head>
+
+<body id="topo">
+
+    <h1>Guia de Referência HTML</h1>
+
+    <p>
+        Este guia apresenta os principais conceitos e elementos
+        da linguagem HTML utilizados no desenvolvimento de páginas web.
+    </p>
+
+    <p>
+        <a href="index.html">Voltar ao Início</a>
+    </p>
+
+    <hr>
+
+    <h2>Menu de Navegação</h2>
+
+    <ul>
+        <li><a href="#introducao">Introdução ao HTML</a></li>
+        <li><a href="#estrutura">Estrutura Básica</a></li>
+        <li><a href="#tags">Tags Básicas</a></li>
+        <li><a href="#textos">Formatação de Textos</a></li>
+        <li><a href="#listas">Listas Ordenadas e Não Ordenadas</a></li>
+        <li><a href="#links-imagens">Links e Imagens</a></li>
+        <li><a href="#tabelas">Tabelas</a></li>
+        <li><a href="#formularios">Formulários</a></li>
+        <li><a href="#semantica">Elementos Semânticos</a></li>
+        <li><a href="#referencias">Documentação Oficial</a></li>
+    </ul>
+
+    <hr>
+
+    <section id="introducao">
+
+        <h2>1. Introdução ao HTML</h2>
+
+        <p>
+            HTML significa HyperText Markup Language
+            (Linguagem de Marcação de Hipertexto).
+        </p>
+
+        <p>
+            É uma linguagem utilizada para estruturar o conteúdo
+            de páginas da internet. Por meio dela podemos organizar
+            textos, imagens, links, tabelas, formulários e outros elementos.
+        </p>
+
+        <p>
+            O HTML trabalha com elementos identificados por tags,
+            que indicam ao navegador como o conteúdo deve ser interpretado.
+        </p>
+
+        <p><strong>Exemplo:</strong></p>
+
+        <pre>
+&lt;h1&gt;Minha primeira página&lt;/h1&gt;
+&lt;p&gt;Este é um parágrafo em HTML.&lt;/p&gt;
+        </pre>
+
+        <p>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+               target="_blank" rel="noopener noreferrer">
+                Saiba mais sobre HTML na MDN
+            </a>
+        </p>
+
+        <p><a href="#topo">Voltar ao topo</a></p>
+
+    </section>
+
+    <hr>
+
+    <section id="estrutura">
+
+        <h2>2. Estrutura Básica de um Documento HTML</h2>
+
+        <p>
+            Todo documento HTML possui uma estrutura básica
+            que informa ao navegador como interpretar a página.
+        </p>
+
+        <p>Os principais elementos são:</p>
+
+        <ul>
+            <li><strong>&lt;!DOCTYPE html&gt;:</strong> informa que o documento utiliza HTML5.</li>
+            <li><strong>&lt;html&gt;:</strong> elemento raiz do documento.</li>
+            <li><strong>&lt;head&gt;:</strong> contém informações e configurações da página.</li>
+            <li><strong>&lt;title&gt;:</strong> define o título da aba do navegador.</li>
+            <li><strong>&lt;body&gt;:</strong> contém o conteúdo visível da página.</li>
+        </ul>
+
+        <p><strong>Exemplo completo:</strong></p>
+
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Minha Página&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;Olá, mundo!&lt;/h1&gt;
+    &lt;p&gt;Minha primeira página HTML.&lt;/p&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+        </pre>
+
+        <p>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Getting_started/Your_first_website/Creating_the_content"
+               target="_blank" rel="noopener noreferrer">
+                Consultar documentação sobre estrutura HTML
+            </a>
+        </p>
+
+        <p><a href="#topo">Voltar ao topo</a></p>
+
+    </section>
+
+    <hr>
+
+    <section id="tags">
+
+        <h2>3. Tags Básicas</h2>
+
+        <p>
+            As tags são utilizadas para definir os elementos
+            que compõem uma página HTML.
+        </p>
+
+        <ul>
+            <li><strong>&lt;h1&gt; até &lt;h6&gt;:</strong> criam títulos e subtítulos.</li>
+            <li><strong>&lt;p&gt;:</strong> cria parágrafos.</li>
+            <li><strong>&lt;br&gt;:</strong> insere uma quebra de linha.</li>
+            <li><strong>&lt;hr&gt;:</strong> representa uma separação temática.</li>
+            <li><strong>&lt;strong&gt;:</strong> indica conteúdo de grande importância.</li>
+            <li><strong>&lt;em&gt;:</strong> indica ênfase no texto.</li>
+            <li><strong>&lt;div&gt;:</strong> cria um contêiner genérico.</li>
+            <li><strong>&lt;span&gt;:</strong> agrupa conteúdo em linha.</li>
+        </ul>
+
+        <p><strong>Exemplo:</strong></p>
+
+        <pre>
+&lt;h1&gt;Título Principal&lt;/h1&gt;
+&lt;h2&gt;Subtítulo&lt;/h2&gt;
+
+&lt;p&gt;Este é um parágrafo.&lt;/p&gt;
+
+&lt;strong&gt;Texto importante&lt;/strong&gt;
+
+&lt;em&gt;Texto com ênfase&lt;/em&gt;
+
+&lt;br&gt;
+
+&lt;hr&gt;
+        </pre>
+
+        <p><a href="#topo">Voltar ao topo</a></p>
+
+    </section>
+
+    <hr>
+
+    <section id="textos">
+
+        <h2>4. Formatação de Textos</h2>
+
+        <p>
+            O HTML oferece elementos que permitem destacar
+            partes específicas de um texto.
+        </p>
+
+        <ul>
+            <li><strong>&lt;b&gt;:</strong> chama atenção visual para o texto.</li>
+            <li><strong>&lt;i&gt;:</strong> apresenta texto em itálico.</li>
+            <li><strong>&lt;u&gt;:</strong> apresenta texto sublinhado.</li>
+            <li><strong>&lt;mark&gt;:</strong> destaca um trecho.</li>
+            <li><strong>&lt;del&gt;:</strong> representa texto removido.</li>
+            <li><strong>&lt;small&gt;:</strong> apresenta texto menor.</li>
+            <li><strong>&lt;sub&gt;:</strong> apresenta texto subscrito.</li>
+            <li><strong>&lt;sup&gt;:</strong> apresenta texto sobrescrito.</li>
+        </ul>
+
+        <p><strong>Exemplo:</strong></p>
+
+        <pre>
+&lt;p&gt;&lt;b&gt;Texto em negrito&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;Texto em itálico&lt;/i&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;Texto sublinhado&lt;/u&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;mark&gt;Texto destacado&lt;/mark&gt;&lt;/p&gt;
+
+&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;
+
+&lt;p&gt;2&lt;sup&gt;3&lt;/sup&gt; = 8&lt;/p&gt;
+        </pre>
+
+        <p><a href="#topo">Voltar ao topo</a></p>
+
+    </section>
+
+    <hr>
+
+    <section id="listas">
+
+        <h2>5. Listas Ordenadas e Não Ordenadas</h2>
+
+        <p>
+            As listas permitem organizar informações em tópicos.
+            Existem dois tipos principais:
+        </p>
+
+        <h3>Lista não ordenada (&lt;ul&gt;)</h3>
+
+        <p>Utiliza marcadores para organizar os itens.</p>
+
+        <pre>
+&lt;ul&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+        </pre>
+
+        <p>Resultado:</p>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <h3>Lista ordenada (&lt;ol&gt;)</h3>
+
+        <p>Utiliza números ou outros marcadores ordenados.</p>
+
+        <pre>
+&lt;ol&gt;
+    &lt;li&gt;Planejamento&lt;/li&gt;
+    &lt;li&gt;Desenvolvimento&lt;/li&gt;
+    &lt;li&gt;Publicação&lt;/li&gt;
+&lt;/ol&gt;
+        </pre>
+
+        <p>Resultado:</p>
+
+        <ol>
+            <li>Planejamento</li>
+            <li>Desenvolvimento</li>
+            <li>Publicação</li>
+        </ol>
+
+        <p>
+            Também podemos criar listas aninhadas,
+            colocando uma lista dentro de outra.
+        </p>
+
+        <p><a href="#topo">Voltar ao topo</a></p>
+
+    </section>
+
+    <hr>
+
+    <section id="links-imagens">
+
+        <h2>6. Links e Imagens</h2>
+
+        <h3>Links (&lt;a&gt;)</h3>
+
+        <p>
+            A tag &lt;a&gt; permite criar links para outras páginas,
+            sites externos ou seções do próprio documento.
+        </p>
+
+        <p><strong>Exemplo de link interno:</strong></p>
+
+        <pre>
+&lt;a href="index.html"&gt;
+    Voltar ao Início
+&lt;/a&gt;
+        </pre>
+
+        <p><strong>Exemplo de link externo:</strong></p>
+
+        <pre>
+&lt;a href="https://www.google.com"
+   target="_blank"
+   rel="noopener noreferrer"&gt;
+    Acessar Google
+&lt;/a&gt;
+        </pre>
+
+        <h3>Imagens (&lt;img&gt;)</h3>
+
+        <p>
+            A tag &lt;img&gt; permite inserir imagens em uma página.
+            Os principais atributos são:
+        </p>
+
+        <ul>
+            <li><strong>src:</strong> indica o caminho da imagem.</li>
+            <li><strong>alt:</strong> fornece uma descrição alternativa.</li>
+            <li><strong>width:</strong> define a largura.</li>
+            <li><strong>height:</strong> define a altura.</li>
+        </ul>
+
+        <p><strong>Exemplo:</strong></p>
+
+        <pre>
+&lt;img src="imagem.jpg"
+     alt="Descrição da imagem"
+     width="300"&gt;
+        </pre>
+
+        <p>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a"
+               target="_blank" rel="noopener noreferrer">
+                Documentação da tag de links
+            </a>
+        </p>
+
+        <p>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/img"
+               target="_blank" rel="noopener noreferrer">
+                Documentação da tag de imagens
+            </a>
+        </p>
+
+        <p><a href="#topo">Voltar ao topo</a></p>
+
+    </section>
+
+    <hr>
+
+    <section id="tabelas">
+
+        <h2>7. Tabelas HTML</h2>
+
+        <p>
+            As tabelas são utilizadas para organizar dados
+            em linhas e colunas.
+        </p>
+
+        <p>Principais tags:</p>
+
+        <ul>
+            <li><strong>&lt;table&gt;:</strong> cria a tabela.</li>
+            <li><strong>&lt;tr&gt;:</strong> cria uma linha.</li>
+            <li><strong>&lt;th&gt;:</strong> cria uma célula de cabeçalho.</li>
+            <li><strong>&lt;td&gt;:</strong> cria uma célula de dados.</li>
+            <li><strong>&lt;caption&gt;:</strong> define o título da tabela.</li>
+        </ul>
+
+        <p><strong>Exemplo:</strong></p>
+
+        <pre>
+&lt;table border="1"&gt;
+
+    &lt;tr&gt;
+        &lt;th&gt;Nome&lt;/th&gt;
+        &lt;th&gt;Idade&lt;/th&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+        &lt;td&gt;Leandro&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+
+&lt;/table&gt;
+        </pre>
+
+        <p>Resultado:</p>
+
+        <table border="1">
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+            <tr>
+                <td>Leandro</td>
+                <td>25</td>
+            </tr>
+        </table>
+
+        <p><a href="#topo">Voltar ao topo</a></p>
+
+    </section>
+
+    <hr>
+
+    <section id="formularios">
+
+        <h2>8. Formulários HTML</h2>
+
+        <p>
+            Os formulários permitem coletar informações
+            fornecidas pelos usuários.
+        </p>
+
+        <p>Principais elementos:</p>
+
+        <ul>
+            <li><strong>&lt;form&gt;:</strong> define o formulário.</li>
+            <li><strong>&lt;label&gt;:</strong> identifica um campo.</li>
+            <li><strong>&lt;input&gt;:</strong> cria campos de entrada.</li>
+            <li><strong>&lt;textarea&gt;:</strong> cria uma área de texto.</li>
+            <li><strong>&lt;button&gt;:</strong> cria um botão.</li>
+            <li><strong>&lt;select&gt;:</strong> cria uma lista de opções.</li>
+        </ul>
+
+        <p><strong>Exemplo:</strong></p>
+
+        <pre>
+&lt;form&gt;
+
+    &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+
+    &lt;input type="text" id="nome"&gt;
+
+    &lt;br&gt;&lt;br&gt;
+
+    &lt;label for="email"&gt;E-mail:&lt;/label&gt;
+
+    &lt;input type="email" id="email"&gt;
+
+    &lt;br&gt;&lt;br&gt;
+
+    &lt;button type="submit"&gt;
+        Enviar
+    &lt;/button&gt;
+
+&lt;/form&gt;
+        </pre>
+
+        <p><strong>Exemplo visual:</strong></p>
+
+        <form>
+            <label for="nome-exemplo">Nome:</label>
+            <input type="text" id="nome-exemplo">
+
+            <br><br>
+
+            <label for="email-exemplo">E-mail:</label>
+            <input type="email" id="email-exemplo">
+
+            <br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <p>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/form"
+               target="_blank" rel="noopener noreferrer">
+                Consultar documentação de formulários
+            </a>
+        </p>
+
+        <p><a href="#topo">Voltar ao topo</a></p>
+
+    </section>
+
+    <hr>
+
+    <section id="semantica">
+
+        <h2>9. Elementos Semânticos</h2>
+
+        <p>
+            Os elementos semânticos ajudam a organizar o conteúdo
+            de uma página de maneira mais clara e significativa.
+        </p>
+
+        <ul>
+            <li><strong>&lt;header&gt;:</strong> representa o cabeçalho.</li>
+            <li><strong>&lt;nav&gt;:</strong> representa uma área de navegação.</li>
+            <li><strong>&lt;main&gt;:</strong> representa o conteúdo principal.</li>
+            <li><strong>&lt;section&gt;:</strong> representa uma seção temática.</li>
+            <li><strong>&lt;article&gt;:</strong> representa um conteúdo independente.</li>
+            <li><strong>&lt;aside&gt;:</strong> representa conteúdo complementar.</li>
+            <li><strong>&lt;footer&gt;:</strong> representa o rodapé.</li>
+        </ul>
+
+        <p><strong>Exemplo:</strong></p>
+
+        <pre>
+&lt;header&gt;
+    Cabeçalho do site
+&lt;/header&gt;
+
+&lt;nav&gt;
+    Menu de navegação
+&lt;/nav&gt;
+
+&lt;main&gt;
+
+    &lt;section&gt;
+        Conteúdo principal
+    &lt;/section&gt;
+
+&lt;/main&gt;
+
+&lt;footer&gt;
+    Rodapé do site
+&lt;/footer&gt;
+        </pre>
+
+        <p>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element"
+               target="_blank" rel="noopener noreferrer">
+                Consultar lista de elementos HTML
+            </a>
+        </p>
+
+        <p><a href="#topo">Voltar ao topo</a></p>
+
+    </section>
+
+    <hr>
+
+    <section id="referencias">
+
+        <h2>10. Documentação Oficial e Referências</h2>
+
+        <p>
+            Para aprofundar os conhecimentos em HTML,
+            consulte as documentações e materiais oficiais abaixo.
+        </p>
+
+        <ul>
+
+            <li>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+                   target="_blank" rel="noopener noreferrer">
+                    MDN Web Docs - HTML
+                </a>
+            </li>
+
+            <li>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements"
+                   target="_blank" rel="noopener noreferrer">
+                    MDN - Referência de Elementos HTML
+                </a>
+            </li>
+
+            <li>
+                <a href="https://html.spec.whatwg.org/"
+                   target="_blank" rel="noopener noreferrer">
+                    WHATWG - Especificação HTML
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.w3.org/"
+                   target="_blank" rel="noopener noreferrer">
+                    W3C - World Wide Web Consortium
+                </a>
+            </li>
+
+        </ul>
+
+        <p><a href="#topo">Voltar ao topo</a></p>
+
+    </section>
+
+    <hr>
+
+    <footer>
+
+        <h2>Fim do Guia de Referência HTML</h2>
+
+        <p>
+            Este material faz parte do portfólio acadêmico
+            de Programação Web.
+        </p>
+
+        <p>
+            <a href="index.html">Voltar ao Início do Portfólio</a>
+        </p>
+
+        <p>
+            <a href="#topo">Voltar ao topo</a>
+        </p>
+
+    </footer>
+
+</body>
+</html>
+
